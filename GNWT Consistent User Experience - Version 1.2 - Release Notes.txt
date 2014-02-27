@@ -1,0 +1,25 @@
+** Consistent User Experience Release Notes **
+Version 1.2
+Authors: Curtis Naphan, Erin Mohr
+Contractor: David Livingston (Outcrop), Douglas Johnson (Outcrop)
+Date:
+
+Included in this Version
+* Vanilla version (no dependencies on Bootstrap)
+* Bootstrap version (dependent on Bootstrap for CSS and JS, but has functioning dropdown menus and adapts to smaller resolutions)
+* CSS and images that are common to both versions
+
+Changes this Version:
+* Separator for metadata term "dcterms.audience" is now semi-colon, not comma
+* Active Offer in Footer renamed "Languages" to be more plain language
+
+Known Errors and Omissions:
+* No Drupal 7 build is provided in this version. 
+* Responsive design breaks down in single-column mode
+
+Plans for Next Release:
+* Basic Drupal 7 build included
+
+Future Plans:
+* Fix responsive design issues for single column layout (smartphone layout). This should be fixed by the time the flagship site is launched.
+* More screenshots of different types of sites to be included in the standard

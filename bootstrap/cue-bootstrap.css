@@ -1,0 +1,197 @@
+.topnav .navbar {
+	float: left;
+}
+
+.topnav .navbar-collapse {
+  padding-right: 0;
+  overflow: hidden;
+}
+
+.topnav .navbar-collapse.in {
+  background: #DBDBDB;
+  
+}
+
+.topnav .navbar-collapse, 
+.topnav .navbar-form {
+    border-color: #BBBBBB;
+}
+
+.topnav .navbar-brand {
+  padding: 0 20px 0 0;  
+}
+
+.topnav a:hover, .topnav a:focus {
+    color: black;
+	text-decoration: underline;
+}
+
+.topnav .navbar-toggle {
+    border-color: #626262;
+}
+
+.topnav .navbar-toggle:hover, 
+.topnav .navbar-toggle:focus {
+    background-color: #0F599A;
+}
+
+/* Primary Menu, Dropdown Menus and Megamenus */
+
+.navbar-default {
+  background: #ffffff;
+  border: none;
+  border-radius: 0;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0px;
+  padding-bottom: 4px;
+
+}
+
+.navbar-default .inner {
+  background: #0F599A;
+  overflow: visible;
+}
+
+.primary-menu .container {
+  max-width: 1010px;
+  overflow: visible;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #FFFFFF;
+    font-weight: normal;
+    padding: 15px 20px;
+	text-decoration: none;
+}
+
+.navbar-default .navbar-nav > li:first-child > a {
+    margin-left: -15px;
+}
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    background-color: #0190D2;
+    color: white;
+}
+
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-bottom-color: white;
+    border-top-color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:focus, 
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    background-color: #0190D2;
+    color: white;
+}
+
+.navbar-default .navbar-nav > .dropdown > a:hover .caret, 
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-bottom-color: white;
+    border-top-color: white;
+}
+
+ul.dropdown-menu {
+  border: 1px solid #BBBBBB;
+  border-width: 0 1px 1px 1px;
+  padding: 10px;
+  border-radius: 0;
+}
+
+
+.dropdown-menu li {
+  background: none;
+  list-style-type: none;
+  list-style-position: outside;
+}
+
+.dropdown-menu > .active > a {
+  background: none;
+  color: #626262;
+  font-weight: normal;
+  padding: 4px 10px;
+}
+ 
+.dropdown-menu > .active > a:hover, 
+.dropdown-menu > .active > a:focus  {
+  background: #BBBBBB;
+  color: #FFFFFF;
+}
+
+.navbar-nav .open .dropdown-menu {
+    background-color: #FFFFFF;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a
+ {
+  background-color: #ffffff;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, 
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    background: #BBBBBB;
+    color: #FFFFFF;
+}
+
+
+.mega ul.dropdown-menu {
+    padding: 10px 0;
+    width: 400px;
+}
+
+.mega ul.dropdown-menu ul {
+    float: left;
+    margin: 0;
+    padding: 0 0 0 10px;
+    width: 50%;
+}
+
+.mega ul.dropdown-menu ul.first {
+    border-right: 1px solid #BBBBBB;
+    padding-right: 10px;
+}
+
+.mega ul.dropdown-menu ul.second {
+    padding-left: 10px;
+}
+
+.mega ul.dropdown-menu ul h4 {
+    font-size: 16px;
+    font-weight: bold;
+	font-style: normal;	
+	display: block;	
+}
+
+.mega ul.dropdown-menu ul h4 a{
+	padding-left: 10px;
+
+}
+
+.mega ul.dropdown-menu ul h4 a:hover {
+	color: #0190D2;
+}
+
+.mega ul.dropdown-menu ul li > a {
+  padding: 4px 20px;
+  display: block;  
+  text-decoration: none;  
+  
+}
+
+.mega ul.dropdown-menu ul li a:hover  {
+  background: #BBBBBB;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.navbar-default .navbar-toggle:hover, 
+.navbar-default .navbar-toggle:focus {
+    background-color: white;
+    color: #0190D2;
+}

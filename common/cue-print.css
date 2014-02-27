@@ -1,0 +1,56 @@
+/*
+Consistent User Experience version 1.2 Stylesheet
+Published February 14th, 2014
+Authors: David Livingstone (Outcrop), Curtis Naphan (GNWT)
+Description: Provides styles for printing. Drops menus, breadcrumbs, aside, footer, and removes all non-white background colours.
+*/
+
+@page  
+{ 
+    size: auto;
+    margin: 20mm;  
+} 
+
+
+.topnav, .primary-menu, .breadcrumb, aside, footer, .readmore  {
+	display: none;
+}
+
+header {
+  width: 960px;
+}
+
+.main {
+  width: 960px;
+}
+
+.highlights {
+	background-color: #FFFFFF;
+}
+
+table, tr, th, td {
+	background-color: #FFFFFF;
+}
+
+.content {
+	width: 100%;
+}
+
+.slider-title h3 {
+	background-image: none;
+	background-color: #FFFFFF;
+	border: none;
+}
+.slider-title h3 a {
+	color: #0F599A;
+}
+
+.name, .name a{
+	text-align: right;
+	color: #3E3E3E;
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 32px;
+}

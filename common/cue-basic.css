@@ -1,0 +1,295 @@
+/*
+Consistent User Experience version 1.2 Stylesheet	
+Published February 14th, 2014
+Authors: David Livingstone (Outcrop), Curtis Naphan (GNWT)
+Description: Establishes basic styles to be used across all GNWT sites. These styles apply to elements
+	without regard for the overall page structure.
+
+Dependencies:
+-None
+
+Colour Table
+Colour			Code			Typical Usage
+---------------------------------------------------------------------
+Dark Blue		#0F599A			Links, primary navigation, buttons
+Bear Blue		#0190D2			Hover links, hover buttons, hover borders
+Light Grey		#DBDBDB			Alternate background
+Mid Grey		#BBBBBB			Borders, lines
+Dark Grey		#3E3E3E			Footer region, headers, text, active/visited links
+White			#FFFFFF			Background, text on blue, text on dark grey
+Black			#000000			Hover colour of grey links
+*/
+
+/* General styles */
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #3E3E3E;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background-color: #3e3e3e;
+  line-height: 1.428571429;
+}
+
+/* Header styles */
+
+h1 {
+  font-family: Arial, sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  color: #3E3E3E;
+  font-weight: normal;
+  padding: 0 0 10px 0;
+  margin: 0;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 26px;
+  margin: 25px 0 5px 0;
+  color: #3E3E3E;
+  font-weight: normal;
+  line-height: 26px;
+}
+
+h2 a {
+  text-decoration: underline;
+}
+
+h2.block-title {
+	margin: 0 0 5px 0;
+}
+
+h3, legend {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  color: #3E3E3E;
+  font-weight: normal;
+  margin: 20px 0 5px 0;
+  line-height: 24px;
+}
+
+h3 a {
+  text-decoration: underline;
+}
+
+h4 {
+  font-size: 16px;
+  color: #3E3E3E;
+  font-weight: bold;
+  font-style: italic;
+  margin: 20px 0 5px 0;
+  line-height: 16px;
+}
+
+/* Link styles */
+
+a {
+  color: #0F599A;
+  text-decoration: underline;
+}
+
+a:visited, a:active  {
+  color: #3E3E3E;
+  text-decoration: underline;
+}
+
+a:hover, a:focus {
+  color: #0190D2;
+}
+
+a img {
+	border: none;
+}
+
+a:hover  img {
+	border: 1px solid #0190D2;
+}
+
+/* Content styles 
+   Content styles apply only to the content region of the page, marked as class "content-area". This is to prevent these styles from being inadvertently applied in the header and so on.
+*/
+.content-area ul {
+  margin: 1em 0;
+}
+.content-area ul li {
+	margin-bottom: 5px;
+}
+
+.content-area a {
+  text-decoration: underline;
+}
+.content-area p {
+  line-height: 1.5; 
+  margin: 0 0 10px 0;
+}
+
+.content-area img {
+	margin-bottom: 10px;
+}
+
+blockquote {
+  border-left: 5px solid #EEEEEE;
+  margin: 0 0 10px;
+  padding: 10px 0 10px 20px;
+  color: #666666;
+  font-style: italic;
+}
+
+blockquote p {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.content-area table {
+    margin: 20px auto;
+    width: 100%;
+    border-collapse: collapse;
+	page-break-inside: avoid;
+}
+
+.content-area table th {
+  background: #0F599A;
+  border: none;
+  text-align: left;
+  font-weight: normal;
+  color: white;
+}
+
+.content-area table thead > tr > th, 
+.content-area table tbody > tr > th,
+.content-area table thead > tr > td, 
+.content-area table tbody > tr > td {
+    line-height: 1.42857;
+    padding: 8px;
+    vertical-align: top;
+}
+
+.content-area table tbody > tr > td, table th {
+    border: 1px solid #BBBBBB;
+}
+
+.content-area  tr:nth-child(even), tr.even { 
+  background-color:#DBDBDB; 
+}
+
+.content-area  td.first, .content-area  th.first {
+	font-weight: bold;
+}
+
+/* Form styles */
+
+.well {
+  background: #ffffff;
+  border: 1px solid #BBBBBB;
+  border-radius: 0;
+  margin-bottom: 20px;
+  padding: 19px;
+}
+
+fieldset {
+  border: 1px solid #BBBBBB;
+  border-radius: 0;
+  margin: 0 0 10px 0;
+  padding: 15px 20px;
+}
+
+label {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+input, input.form-control, textarea, select, button {
+	background-color: #FFFFFF;
+	font-size: 16px;
+	border: 1px solid #BBBBBB;
+	border-radius: 0;
+	box-shadow: none;
+	color: #3E3E3E;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+/* Textbox-specific styles */
+input[type="text"], input[type="password"] {
+	padding: 5px;
+    margin: 2px 8px 2px 0px;
+}
+
+textarea {
+    height: 200px;
+	width: 100%;
+	font-size: 95%;
+	font-family: Courier New, System, serif;
+	color: #626262;
+	padding: 10px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+	margin-left: 20px;
+	display: block;
+	background-color: #FFFFFF;
+	border: 1px solid #BBBBBB;
+    float: left;
+	border: 0;
+    margin-left: 0px;
+ }
+
+a.button, input[type="button"], input[type="submit"], button , .pager li > a, .pagination > li > a {
+  background: #0F599A;
+  color: #FFFFFF;
+  margin: 10px 8px 10px 0px;
+  padding: 8px 24px;
+  text-decoration: none;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 0;
+  display: inline-block;
+  cursor: pointer;
+}
+
+a.button:hover, input[type="button"]:hover, input[type="submit"]:hover, button:hover, .pagination > li > a:hover, .pager li a:hover,
+a.button:focus, input[type="button"]:focus, input[type="submit"]:focus, button:focus , .pagination > li > a:focus, .pager li a:focus {
+    background-color: #0190D2;    
+}
+
+legend {
+	padding: 0px 5px;
+}
+
+/* Pagers */
+
+ .pagination, .pager {
+    border-radius: 0;
+    display: inline block;
+    margin: 20px 0;
+    padding-left: 0;
+    text-align: center;
+}
+
+.pagination > li {
+    display: inline;
+    list-style-type: none;
+}
+
+.pagination > li > a {
+    padding: 8px;
+	margin: 0 2px;
+}
+
+.pagination > li:first-child > a , .pagination > li:last-child > a{
+    padding: 8px 24px;
+	border-radius: 0;
+}
+
+.pager {
+    list-style: none outside none;
+    text-align: center;
+}
+
+.pager > li {
+    display: inline;
+    list-style-type: none;
+}
+

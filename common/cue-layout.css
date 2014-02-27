@@ -1,0 +1,621 @@
+/*
+Consistent User Experience version 1.2 Stylesheet
+Published February 14th, 2014
+Authors: David Livingstone (Outcrop), Curtis Naphan (GNWT)
+Description: Extends cue-basic.css to provide page layout and homepage element styles. Most styles below depend on the page being designed according to a particular structure. 
+	There are also styles for particular elements and widgets, such as the menus, slider, spotlights, etc... The styles are grouped top-to-bottom, according to the element being styled.
+*/
+
+/* Column styles */
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  box-sizing:border-box;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+.row {
+  margin-right: -10px;
+  margin-left: -10px;
+  overflow: hidden;
+}
+
+.col-sm-4,
+.col-sm-8,
+.col-sm-12 {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.col-sm-4 {
+  width: 33.3333%;
+  float: left;
+}
+
+.col-sm-8 {
+  width: 66.6667%;
+  float: left;
+}
+
+header,
+.breadcrumb-bar,
+.banner,
+.highlights,
+.main {
+  overflow: hidden;
+}
+
+.main {
+  background: white;
+  padding: 20px 0;
+}
+
+.content {
+	margin: 0;
+}
+
+/* Top bar styles */
+
+.topnav {
+  background: #DBDBDB;
+  border: none;
+  height: 34px;
+  margin-bottom: 0;
+  z-index: 5000;
+}
+
+.navbar-header, .topnav .navbar {
+    float: left;
+}
+
+.navbar ul {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    list-style-type: none
+}
+
+.navbar ul li a {
+  padding: 0 20px;
+}
+
+.topnav a {
+  color: #3E3E3E;
+  line-height: 34px;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.topnav li.first a, footer li:first-child a{
+  padding-left: 0;
+}
+
+.navbar li a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.search {
+  float: right;
+  padding: 0;
+}
+
+.text-input {
+    width: 180px;
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: top;
+	margin-right: 0;
+}
+
+.search input {
+	border-color: #DBDBDB;
+	border-width: 0 0 1px 0;
+	height: 34px;
+	margin: 0;
+}
+
+.search button {
+	margin: 0;
+	height: 34px;
+	padding-top: 6px;
+}
+
+/* Header */
+
+header {
+  overflow: hidden;
+  background: white;
+  padding: 16px 0 22px 0;
+}
+
+img.logo {
+  float: left;
+  margin-top: 6px;  
+}
+
+img.logo:hover {
+	border: 0;
+}
+
+
+header h1.single-row {
+	margin-top: 1.45em;
+}
+
+header h1.two-rows {
+	margin-top: 0.4em;
+}
+
+header h1 a, header h1 a:hover, header h1 a:focus, header h1 a:visited {
+    color: #626262;
+    float: right;
+    font-weight: normal;
+    padding: 0;
+    text-align: right;
+    max-width: 700px;
+    text-decoration: none;
+}
+
+/* Primary Menu */
+
+.primary-menu {
+  background: #ffffff;
+  border: none;
+  border-radius: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0px;
+  padding-bottom: 4px;
+}
+
+.primary-menu .inner {
+  background: #0F599A;
+  height: 50px;  
+}
+
+.primary-menu .container {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 980px;
+  height: 50px;
+  overflow: visible;
+}
+
+.primary-menu .navbar, .primary-menu .nav {
+	margin-left: -20px;
+}
+
+.primary-menu .navbar li > a {
+    display: block;
+    line-height: 50px;
+	float: left;
+    color: #FFFFFF;
+    font-weight: normal;
+    font-size: 16px;
+    text-decoration: none
+}
+
+.primary-menu .navbar li.active a,
+.primary-menu .navbar li > a:hover,
+.primary-menu .navbar li > a:focus {
+  background-color: #0190D2;
+}
+
+.caret {
+    display:inline-block;
+    width:0;
+    height:0;
+    margin-left:2px;
+    vertical-align:middle;
+    border-top:4px solid #ffffff;
+    border-right:4px solid transparent;
+    border-bottom:0 dotted #ffffff;
+    border-left:4px solid transparent;
+    content:"";
+}
+
+
+.primary-menu .navbar > li > a:hover, 
+.primary-menu .navbar > li > a:focus {
+    background-color: #0190D2;
+    color: white;
+}
+
+.primary-menu .navbar > .dropdown > a:hover .caret, 
+.primary-menu .navbar > .dropdown > a:focus .caret {
+    border-bottom-color: white;
+    border-top-color: white;
+}
+
+
+/* Breadcrumbs */
+
+.breadcrumb-bar {
+  background: #DBDBDB;
+  color: #3E3E3E;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.breadcrumb {
+    background: none;
+    border-radius: 0;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumb li {
+    display: inline;
+}
+
+.breadcrumb a, .breadcrumb a:visited {
+   text-decoration: none;
+   color: #3E3E3E;
+}
+
+.breadcrumb li a:hover, .breadcrumb li a:focus {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.breadcrumb > li + li:before {
+    color: #3E3E3E;
+    content: "/ ";
+    padding: 0 5px;
+}
+
+/* Banner */
+
+.banner {
+  background: white;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.banner section {
+  margin-bottom: 10px;
+}
+
+.banner .slider .inner {
+    position: relative;
+}
+
+.slider img {
+	width: 630px;
+	height: 275px;
+}
+
+.slider-title {
+  left: 0;
+  bottom: 20px;
+  padding: 0 20px;
+  position: absolute;
+  width: 100%;
+}
+
+.slider-title .slider-controls {
+    float: right;
+    width: 115px;
+}
+
+.slider-title h3 {
+    background: url("images/overlay_blue.png");
+    font-size: 16px;
+    font-weight: normal;
+    height: 49px;
+    line-height: 49px;
+	width: 470px;
+    margin: 0 2px 0 0;
+    padding: 0 30px;
+	float: left;
+}
+
+.slider-title h3 a {
+    color: #FFFFFF;
+}
+
+.slider-title h3 a:hover, .slider-title h3 a:hover {
+    color: #0190D2;
+}
+
+.slider-title span a {
+    display: block;
+    float: left;
+    font-size: 0;
+    height: 49px;
+    overflow: hidden;
+    text-indent: -9999em;
+    width: 55px;
+}
+
+.slider-title span.previous a {
+    background: url("images/controls-previous.png");
+    margin-right: 5px;
+}
+
+.slider-title span.next a {
+    background: url("images/controls-next.png");
+}
+
+.slider-title span a:hover, .slider-title span a:focus {
+    background-position: 0 -49px;
+}
+
+
+/* Highlights */
+
+.highlights {
+    background: none repeat scroll 0 0 #DBDBDB;
+    padding: 20px 0 20px 0;
+}
+
+.highlights  .inner{
+	min-height: 330px;
+}
+
+/* Footer styles */
+
+footer {
+	min-height: 200px;
+}
+
+footer .navbar ul {
+  margin-top: 20px;
+}
+
+footer .navbar a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 0 40px 0 0;
+}
+
+footer .navbar a:hover {
+  color: #dbdbdb;
+  text-decoration: underline;
+}
+
+footer .footer-nav {
+	padding-left: 0;
+}
+
+
+.sponsors {
+    float: right;
+    margin-top: 30px;
+    padding-bottom: 80px;
+}
+
+.sponsors ul li {
+    display: inline;
+    list-style: none outside none;
+    margin-left: 30px;
+}
+
+.sponsors img:hover {
+  opacity:0.6;
+  filter:alpha(opacity=60); /* For IE8 and earlier */
+}
+
+/* Widgets 
+
+	A highlight is a single column widget with a border, an image, a title and a short body of text.
+	They are used for spotlights, highlights, the Minister and other uses.
+	The following markup is expected:
+	<section class="highlight"><div class="inner"><a><img/></a><h3><a></a></h3><p></p></div></section>
+
+*/
+
+aside section, section .inner {
+	background-color: #FFF;
+    border: 1px solid #BBBBBB;
+    padding: 10px;
+}
+
+aside section {
+	margin: 0 0 20px 0;
+}
+
+aside section ul {
+    margin: 0.5em 0;
+    padding-left: 0;
+}
+
+aside section ul li {
+  line-height: 1.4em;
+  list-style-type: none;
+  padding: 0;
+}
+
+aside section ul li a {
+    display: block;
+    padding: 6px 0;
+}
+
+aside section.highlight {
+	border: 0;
+	padding: 0;
+}
+
+div.separator {
+	border-bottom: 1px solid #BBBBBB;
+	margin-bottom: 20px;
+	clear: both;
+}
+
+div.clear {
+	clear: both;
+	height: 0;
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+section.highlight a img {
+    border: 1px solid #FFFFFF;
+	width: 100%;
+}
+
+section.highlight a:hover img, section.highlight a:focus img {
+    border: 1px solid #0190D2;
+}
+
+section h3, p{
+	margin: 5px 0 0 0;
+}
+
+/* A link block is a link/header and small text blurb */
+ul.link-block {
+    float: left;
+    margin: 0;
+    padding: 0;	
+}
+
+ul.link-block  li {
+	width: 320px;
+	float: left;
+	display: inline;	
+	margin: 0;
+	padding: 20px 20px 10px 0;
+	min-height: 140px;
+}
+
+ul.link-block h3 {
+	margin: 5px 0 5px 0;
+}
+
+/* Secondary menu styles
+	The following markup is expected (where "active" can be applied to any <li> element.
+	<section class="secondary-menu"><ul><li><span class="caret open"/><ul><li class="active"/></ul></li></ul></section>
+*/
+.secondary-menu {
+    padding: 0;
+	margin-top: 0;
+}
+
+.secondary-menu ul {
+    padding-left: 0;
+    padding: 0;
+	margin: 0;
+}
+
+.secondary-menu ul li {
+  line-height: 1.4em;
+  list-style-type: none;
+  padding: 0;  
+}
+
+.secondary-menu ul li a {
+    display: block;
+    position: relative;
+    color: #0F599A;
+	text-decoration: none;
+    padding: 8px 10px;
+    display: block;
+    border-top: 1px solid #BBBBBB;
+}
+
+.secondary-menu ul ul {
+    padding-left: 0;
+}
+
+.secondary-menu ul li ul li a {
+    padding-left: 2em;	
+}
+
+.secondary-menu ul > li:first-child > a {
+    border-top: 0;
+}
+
+.secondary-menu ul li ul li:first-child a {
+    border-top: 3px solid #BBBBBB;
+}
+
+.secondary-menu ul li ul li:last-child a {
+    border-bottom: 2px solid #BBBBBB;
+}
+
+
+.secondary-menu ul li.active > a {
+    background: #0F599A;
+    color: white;
+}
+
+.secondary-menu ul li a:hover, .secondary-menu ul li a:focus {    
+    background: #DBDBDB;
+	color: #3E3E3E;
+}
+
+.secondary-menu .caret {
+  position: absolute;
+  top: 1em;
+  right: 10px;
+}
+
+.secondary-menu .caret.open {
+    border-top:4px solid #0F599A;
+    border-right:4px solid transparent;
+    border-bottom:0 dotted #0F599A;
+    border-left:4px solid transparent;
+}
+
+.secondary-menu li.active span.caret.open {
+    border-top:4px solid #FFFFFF;
+    border-right:4px solid transparent;
+    border-bottom:0 dotted #FFFFFF;
+    border-left:4px solid transparent;
+}
+
+.secondary-menu .caret.closed {
+    border-top:4px solid transparent;
+    border-right: 0 solid #0F599A;
+    border-bottom:4px dotted transparent;
+    border-left:4px solid #0F599A;
+}
+
+/* News Articles styles */
+
+article {
+    border-bottom: 1px solid #BBBBBB;
+    overflow: hidden;
+    padding: 14px 0;
+}
+
+article img {
+	margin-left: 10px;
+	border: 0;
+	width: 9px;
+	height: 14px;
+}
+
+article h3 {
+    line-height: 1.3em;
+    display: inline;
+}
+
+article h3 a {
+    color: #0F599A;
+    font-weight: normal;
+}
+
+article h3 a:hover img {
+	border: 0;
+}
+
+.readmore {
+  display: inline block;
+  float: right;
+  vertical-align: baseline;
+}

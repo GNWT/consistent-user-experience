@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page Title</title>
+
+    <link href="../common/images/favicon.ico" rel="shortcut icon">
+    
+  	<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <link rel="stylesheet" href="../common/cue-basic.css">
+    <link rel="stylesheet" href="../common/cue-layout.css">
+    <link rel="stylesheet" href="cue-bootstrap.css">
+    <link rel="stylesheet" media="print" href="../common/cue-print.css"/>
+   
+  </head>
+  
+  <body>
+    <!--googleoff: index-->
+	<div class="topnav">
+        <div class="container">
+			<div class="navbar">
+		        <!-- gov.nt.ca link and dropdown toggle for mobile -->
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".topnav">
+					<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+				  </button>
+				  <a class="navbar-brand" href="#">gov.nt.ca</a>
+				</div>		
+				<ul>
+					<li><a href="http://www.gov.nt.ca/research/departments/">Departments</a> </li>
+					<li><a href="http://services.exec.gov.nt.ca/">Services</a> </li>
+					<li><a href="http://www.gov.nt.ca/utility/contact/index.html">Contact</a> </li>
+					<li><a href="#fr">Fran&ccedil;ais</a> </li>
+				</ul>
+			</div>
+			<!-- search form -->
+			<form class="search" action="http://google.gov.nt.ca/search" method="get">
+				<div class="text-input">
+					<input class="form-control" type="text" name="q"/>
+					<input type="hidden" name="output" value="xml_no_dtd"/>
+					<input type="hidden" name="client" value="test_frontend"/>
+					<input type="hidden" name="proxystylesheet" value="test_frontend"/>
+					<input type="hidden" name="getfields" value="*"/>
+					<input type="hidden" name="lr" value="lang_en"/>
+					<input type="hidden" name="site" value="All_GNWT"/>
+				</div><button type="submit">Search</button>
+			</form>
+         </div>
+    </div><!--/.topnav -->
+    
+
+    <header>
+      <div class="container">
+        <a href="index.html" title="gov.nt.ca" tabindex="-1"><img class="logo pull-left" src="../common/images/gnwt-logo.png" alt="Logo of the Government of the Northwest Territories"/></a>
+        <h1 class="name two-rows"><a href="/">Consistent User Experience<br/>Version 1.1</a></h1>
+      </div>
+    </header> <!--/header -->
+    
+    <div class="navbar navbar-default primary-menu">
+      <div class="inner">
+        <div class="container">
+          <!-- dropdown toggle for mobile -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".primary-nav">
+              <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse primary-nav">
+            <ul class="nav navbar-nav">
+              <li class="active first"><a href="index.html">Home</a></li>
+              <li class=""><a href="page.html">Body Content</a> </li>
+
+              <li><a href="elements.html">Form Elements</a> </li>
+
+              <!-- dropdown menu -->
+              <li class="expanded dropdown">
+                <a href="#dropdown" data-target="#" class="dropdown" data-hover="dropdown" data-toggle="dropdown">Dropdown Menu<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li class="first leaf active">
+                    <a href title="Submenu Item 1" class="active">Dropdown Menu Item Number One</a>
+                  </li>
+                  <li class="leaf active">
+                    <a href title="Submenu Item 2" class="active">Dropdown Menu Item Number Two</a>
+                  </li>
+                  <li class="last leaf active">
+                    <a href title="Submenu Item 3" class="active">Dropdown Menu Item Number Three</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- mega menu -->
+              <li class="last expanded dropdown mega">
+                <a href="#megamenu" data-target="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Mega Menu<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <ul class="first">
+                    <h4><a href="#cat1-h1">Category Header 1</a></h4>
+                    <li class="first leaf active">
+                      <a href title="Submenu Item 1" class="active">Submenu Item 1</a>
+                    </li>
+                    <li class="leaf active">
+                      <a href title="Submenu Item 2" class="active">Submenu Item 2</a>
+                    </li>
+                    <h4><a href="#cat2-h1">Category Header 2</a></h4>
+                    <li class="first leaf active">
+                      <a href title="Submenu Item 1" class="active">Submenu Item 1</a>
+                    </li>
+                    <li class="leaf active">
+                      <a href title="Submenu Item 2" class="active">Submenu Item 2</a>
+                    </li>
+                  </ul>
+                  <ul class="second">
+                    <h4>Category Header 3</h4>
+                    <li class="first leaf active">
+                      <a href title="Submenu Item 1" class="active">Submenu Item 1</a>
+                    </li>
+                    <li class="leaf active">
+                      <a href title="Submenu Item 2" class="active">Submenu Item 2</a>
+                    </li>
+                    <li class="last leaf active">
+                      <a href title="Submenu Item 3" class="active">Submenu Item 3</a>
+                    </li>
+                    <li class="last leaf active">
+                      <a href title="Submenu Item 3" class="active">Submenu Item 4</a>
+                    </li>
+                    <li class="last leaf active">
+                      <a href title="Submenu Item 3" class="active">Submenu Item 5</a>
+                    </li>
+                  </ul>
+                </ul>
+              </li>
+            </ul>
+            <!-- /.navbar-nav -->
+          </div>
+          <!-- /.navbar-nav -->
+        </div>
+      </div>
+    </div>
+    <!-- /.primary-menu -->
+	
+
+    <div class="breadcrumb-bar">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li class="govhome"><a href="http://www.gov.nt.ca">gov.nt.ca</a></li>
+          <li>Site Title</li>
+        </ol>
+      </div>
+    </div> <!-- /.breadcrumb-bar -->
+    <!--googleon: index-->
+
+    
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+        
+          <!-- Slideshow -->
+          <div class="col-sm-8 slider">
+            <div class="inner">
+              
+              <img src="../common/images/slider.jpg">
+              
+              <div class="slider-title">
+				<h3><a href="http://google.com/">Title of Story to Go Here</a></h3>
+               <div class="slider-controls">
+                      <span class="previous"><a href="">previous</a></span><span class="next"><a href="">next</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Minister's block -->
+          <section class="col-sm-4 highlight minister">
+            <div class="inner">
+				<a href="#minister" tabindex="-1"><img src="../common/images/premier.jpg"></a>
+                <h3><a href="#minister">Meet the Minister</a></h3>
+                <p>The Honorable Minister Name</p>             
+            </div>
+          </section>
+          
+        </div>
+      </div>
+    </div><!--/.banner-->
+    
+    <div class="highlights">
+      <div class="container">
+        <div class="row">
+        
+          <!-- highlight 1 -->
+          <section class="col-sm-4 highlight">
+            <div class="inner">
+              <a href="#highlight1" tabindex="-1"><img src="../common/images/feature-thmb-1.jpg"></a>
+              <h3><a href="#highlight1">Title of Story Goes here</a></h3>
+              <p>Ebit ex ea aditate reperitiam qui ut explab in re nulpa aut es exernat pratibus.</p>
+            </div>
+          </section>
+          
+          <!-- highlight 2 -->
+          <section class="col-sm-4 highlight">
+            <div class="inner">
+              <a href="#highlight2" tabindex="-1"><img src="../common/images/feature-thmb-2.jpg"></a>
+              <h3><a href="#highlight2">Title of Story Goes here</a></h3>
+              <p>Ebit ex ea aditate reperitiam qui ut explab in re nulpa.</p>
+            </div>
+          </section>
+
+         <!-- highlight 3 --> 
+          <section class="col-sm-4 highlight">
+            <div class="inner">
+              <a href="#highlight3" tabindex="-1"><img src="../common/images/feature-thmb-3.jpg"></a>
+              <h3><a href="#highlight3">Title of Story Goes here</a></h3>
+              <p>Ebit ex ea aditate reperitiam qui ut explab in re nulpa aut es exernat pratibus et la abori quiatecabori remquis acipiti onsero.</p>
+            </div>
+          </section>
+          
+        </div>
+      </div>
+    </div> <!--/.highlights-->
+      
+    <div class="main">
+		<div class="container">
+			<div class="row">
+
+				  <!-- Sidebar -->
+				<aside class="col-sm-4">
+					
+					<section>
+					  <h2 class="block-title">Other Links</h2>
+					  <ul class="menu">
+						<li><a href="">Another Link</a></li>
+						<li class="active"><a href="">Another Link</a></li>
+						<li><a href="">Another Link</a></li>
+					  </ul>
+					</section>
+					
+					<section>
+					  <h2 class="block-title">Popular Pages</h2>
+					  <ul class="menu">
+						<li><a href="">Road Conditions - Highway Hotline</a></li>
+						<li><a href="">Find and Apply For Jobs</a></li>
+						<li><a class="active" href="">Apply for or Replace Your Health Card</a></li>
+						<li><a href="">Register a Business in the NWT</a></li>
+						<li><a href="">Get Flu Vaccination Information</a></li>
+					  </ul>
+					</section>
+
+				</aside>
+			
+			  <!-- content area -->
+
+			  <div class="col-sm-8 content">
+				<section class="recent-news">
+				
+				  <h2 class="block-title">Recent News</h2>
+				  
+				  <article>
+					<h3><a href="#article">NWT Promoted as the Aurora Capital of the World in China<img src="../common/images/arrow.png"></a></h3>
+				  </article>
+				  
+				  <article>
+					<h3><a href="#article">Hay River Beach Audit Report Released; GNWT outlines measures being taken to improve beach safety<img src="../common/images/arrow.png"></a></h3>
+				  </article>
+				  
+				  <article>
+					<h3><a href="#article">Mackenzie Valley Fibre Link Proponents Shortlisted<img src="../common/images/arrow.png"></a></h3>
+				  </article>
+				  
+				  <article>
+					<h3><a href="#article">David Ramsay &mdash; Hong Kong Fur Federation<img src="../common/images/arrow.png"></a></h3>
+				  </article>
+				  
+				  <article>
+					<h3><a href="#article">NWT wild fur garners high interest from Chinese buyers<img src="../common/images/arrow.png"></a></h3>
+				  </article>
+				  
+				  <article>
+					<h3><a href="#article">Bob McLeod &mdash; Canada China Business Council Luncheon<img src="../common/images/arrow.png"></a></h3>
+				  </article>
+				  
+				  <a class="button readmore" href="#morenews">More News &raquo;</a>
+			
+				</section> <!-- /.recent-news -->
+			  
+			  </div>
+		  
+			</div>
+		</div>
+    </div> <!--/.main-->
+            
+    <!--googleoff: index-->
+    <footer>
+        <div class="navbar">
+			<div class="container">			
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".footer-nav">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>				
+				<div class="collapse navbar-collapse footer-nav">
+					<ul>
+					  <li><a href="http://rdirectory.gov.nt.ca/rDirectory.aspx">Directory</a></li>
+					  <li><a href="http://www.gov.nt.ca/utility/contact/index.html">Contact</a></li>
+					  <li><a href="http://gov.nt.ca/terms">Terms of Use</a></li>
+					  <li><a href="http://www.executive.gov.nt.ca/accessibility/">Accessibility</a></li>
+					  <li><a href="http://www.gov.nt.ca/languages.htm">Languages</a></li>
+					  <li><a href="http://www.gov.nt.ca/utility/contact/index.html">Newsroom</a></li>
+					</ul>
+				</div>			  
+			</div>        
+        </div> <!-- .navbar -->
+    </footer>
+    <!--googleon: index-->
+	
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <!-- Bookstrap js -->
+  <script src="bootstrap/bootstrap.min.js"></script>
+  <!-- Bootstrap plugin for hover dropdown from https://github.com/CWSpear/bootstrap-hover-dropdown -->
+  <script src="bootstrap/bootstrap-hover-dropdown.min.js"></script>
+  
+  </body>
+
+</html>
