@@ -1,0 +1,29 @@
+img.logo {
+}
+
+#search-prompt, .topnav, a.dn-link , .cue-url {
+	display: none;
+}
+
+div#dyn_nav {
+	display: none;
+}
+
+div#main_res {
+	border-left: 0;
+	margin-left: 0;
+}
+
+.dn-bar {
+	height: 30px;
+}
+
+footer ul.nav  li {
+	display: block;
+	margin-bottom: 10px;
+}
+
+footer ul.nav li a {
+	margin-left: 20px;
+	padding-left: 0;
+}

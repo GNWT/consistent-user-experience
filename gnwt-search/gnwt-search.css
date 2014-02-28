@@ -1,0 +1,159 @@
+/* The text before the search */
+#search-prompt {  
+  vertical-align: middle;
+  font-weight: normal;
+  font-size: 125%;
+  color: white;
+  margin-left: 20px;  
+  margin-top: 2px;
+  line-height: 36px;
+  float: left;
+  display: inline;
+}
+
+/* The text area q */
+.primary-menu .form-control {
+	width: 50%;
+	min-width: 190px;
+	max-width: 400px;
+	margin-left: 15px;
+	margin-right: 5px;
+	vertical-align: middle;
+	height: 37px;
+	-webkit-appearance: none;
+}
+
+/* The search button */
+.primary-menu input[type="submit"], .primary-menu input[type="button"], .primary-menu button {
+	margin: 0;
+	-webkit-appearance: none;
+	border: 1px solid white;
+	vertical-align: middle;
+}
+
+.primary-menu form {
+	padding: 0;
+	margin: 0;
+}
+
+.cue-service-descriptor {
+	display: block;
+	font-size: 75%;
+	color: #626262;
+}
+
+#cue_search_all {
+	text-align: right;
+}
+
+div.main {
+	padding-top: 5px;
+}
+
+.primary-menu {
+	padding-bottom: 0;
+}
+
+.primary-menu .navbar {
+	padding-top: 5px;
+	padding-bottom: 7px;
+}
+
+blockquote {
+	font-style: normal;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.i,.i:link{color:#3e3e3e}
+
+.g{margin-top: 20px; margin-bottom: 2px;}
+
+#top-navigation {
+}
+
+.row {
+	margin: 0;
+}
+
+#main_res table {
+	margin-bottom: 20px;
+}
+
+.cue-municipal-icon {
+	margin-left: 5px;
+}
+
+a:hover .cue-municipal-icon  {
+	border: 0;	
+}
+
+.cue-url {
+	color: #008800;	
+}
+
+/**
+* CSS for dynamic navigation.
+*/
+div#main_res {
+		background: #FFF none repeat scroll 0 0;
+		border-left: 1px solid #BBBBBB;
+		margin-left: 189px;
+		padding-left: 5px;
+		padding-right: 4px;
+		min-height: 250px;
+}
+div#main_res p {
+	margin-top: 0;
+}
+div#dyn_nav {
+	background: #FFF none repeat scroll 0 0;
+	position: absolute;
+	padding-top: 1px;
+	top: 0;
+	width: 185px;
+}
+div.dn-hdr {
+	font-size: 14px;
+	height: 23px;
+	line-height: 23px;
+	margin: 0;
+}
+  
+div.dn-hdr {
+    background-color: #0F599A;
+    color: #FFF;
+}
+
+ul.dn-attr a, a.dn-bar-link {
+	color: #0F599A;
+	text-decoration: none;
+}
+
+a.dn-attr-v:hover {
+	text-decoration: underline;
+}
+
+.dn-attr-hdr-txt {
+	color: #3e3e3e;
+}
+
+a.dn-attr-v:visited, a.dn-bar-link:visited {
+    color: #3e3e3e;
+}
+
+div.main-results, div.main-results-without-dn {
+	margin: 0.1em;
+}
+
+/* cue-layout.css overrides */
+
+.container {
+	width: auto;
+	max-width: 960px;
+}
+
+.primary-menu .container {
+  width: auto;
+  max-width: 980px;
+}
