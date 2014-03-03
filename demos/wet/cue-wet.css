@@ -1,0 +1,199 @@
+/* Consistent User Experience - WET BOEW Overrides 
+	Contains the styles necessary to override the Government of Canada's WET standard
+*/
+
+#gcwu-psnb .mb-menu, #wb-core-in, #gcwu-gcnb-in, #gcwu-bnr-in, #gcwu-psnb-in, #gcwu-bc-in, #gcwu-gcft-in, #gcwu-sft-in, #wb-body #wb-main {
+	width: 960px;
+}
+
+#wb-body, #wb-head-in {
+	background: #FFFFFF;
+}
+
+#wb-skip {
+	display: none;
+}
+
+#gcwu-gcnb-in {
+	height: 30px;
+	border: 0;
+}
+
+#gcwu-gcnb {
+	background-color: #DBDBDB;
+	border: 0;
+	min-height: 34px;
+}
+
+#gcwu-gcnb  ul {
+	float: left;	
+}
+
+#gcwu-gcnb  ul li {
+	line-height: 20px;
+	padding: 5px inherit;
+}
+
+
+#gcwu-gcnb  ul li  a {
+	color: #3E3E3E;
+	border: 0;
+	font-size: 12px;	
+	line-height: 26px;
+	padding-right: 30px;
+}
+
+#gcwu-gcnb  ul li:first-child a{
+	margin-left: 0;
+	padding-left: 0;
+}
+
+#gcwu-gcnb-in {
+	min-height: 34px;
+}
+
+#gcwu-bnr-in .logo {
+	margin: 0;
+}
+
+#gcwu-bnr-in .logo:hover {
+	border: none;
+}
+
+#gcwu-title {
+	margin-top: 10px;
+	height: 80px;
+	float: right;
+}
+
+#gcwu-title a {
+	line-height: 36px;
+	text-shadow: none;
+	color: #3E3E3E;
+	font-size: 36px;
+	text-align: right;
+	float: right;
+}
+
+#gcwu-title a:hover, #gcwu-title a:active {
+	text-decoration: none;
+	text-shadow: none;
+}
+
+#gcwu-wmms {
+	display: none;
+}
+
+#gcwu-bnr {
+	padding-top: 20px;
+}
+
+#gcwu-srchbx {
+	position: relative;
+	float: right;
+	background: none;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	text-align: right;
+}
+
+#gcwu-srchbx form {
+	padding: 0;
+	margin: 0;
+}
+
+#gcwu-srchbx #gcwu-srch {
+	border-radius: 0;
+    width: 180px;
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+	border: none;
+	font-size: 16px;
+	font-family: Arial, sans serif;
+	border: none;	
+	border-bottom: 1px solid #DBDBDB;
+	height: 33px;	
+}
+
+#gcwu-srchbx #gcwu-srch-submit {
+	border: none;
+	border-radius: 0;
+	font-family: Arial, sans-serif;
+	line-height: 25px;
+	margin: 0;
+	background: #0F599A;
+	color: #FFFFFF;
+	font-size: 16px;
+	text-shadow: none;
+	padding: 4px 24px;
+	height: 33px;
+	padding-top: 6px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+#gcwu-srchbx #gcwu-srch-submit:hover, #gcwu-srchbx #gcwu-srch-submit:active {
+	border: 0;
+    background-color: #0190D2;    
+	margin: 0;
+}
+
+#gcwu-psnb {
+	background-color: #0F599A;
+	height: 50px;
+}
+
+
+#gcwu-psnb .wet-boew-menubar, #gcwu-psnb #gcwu-psnb-in ul, #gcwu-psnb #gcwu-psnb-in ul  li{
+	border: 0;
+	background: none;	
+	padding: 0;
+}
+
+#gcwu-psnb .wet-boew-menubar ul li:first-child {
+	margin-left: -15px;
+}
+
+#gcwu-psnb .wet-boew-menubar ul li a {
+	line-height: 35px;	
+	vertical-align: middle;
+	font-weight: normal;
+	font-size: 16px;
+	padding-right: 25px;
+}
+
+#gcwu-psnb .wet-boew-menubar ul li a:hover, #gcwu-psnb .wet-boew-menubar ul li a:active {
+	text-decoration: none;
+	background-color: #0190D2;
+}
+
+#gcwu-bc{
+	margin-top: 4px;
+	background-color: #DBDBDB;
+	height: 24px;
+	margin-bottom: 4px;
+}
+
+#gcwu-bc-in{
+	background: none;
+}
+
+#gcwu-bc-in ol {
+	margin: 0;
+}
+
+#gcwu-bc-in li {
+    color: #3E3E3E;
+	background: none;
+	font-size: 12px;
+	padding: 2px 0 0 0;
+	margin: 0;	
+	width: auto;
+}
+
+#gcwu-bc-in ol > li + li:before {
+    content: "/ ";
+    padding: 0 5px;
+}
